@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const API_BASE = 'http://127.0.0.1:5000/api'
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://127.0.0.1:5000/api'
 
 // Shared form used for both the Login and Registration screens.
 // `mode` is either 'login' or 'register'. `onSwitchMode` flips between them.

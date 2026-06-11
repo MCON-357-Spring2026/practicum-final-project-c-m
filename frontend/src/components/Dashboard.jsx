@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const API_BASE = 'http://127.0.0.1:5000/api'
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://127.0.0.1:5000/api'
 
 // Main authenticated view: a form to log new sightings and a feed of past ones.
 function Dashboard({ user, handleLogout }) {
